@@ -334,3 +334,56 @@ header {
     max-width: 100%;
   }
 }
+
+.info-and-icon:hover [alt="phone number"] {
+    
+    animation: 1s infinite alternate shake;
+    
+    
+}
+
+.info-and-icon:hover img[alt="email"] {
+    animation: 1s infinite alternate bounce;
+}
+
+@keyframes shake {
+   from {
+    transform: rotate(0deg);
+   }
+
+   50% {
+    transform: rotate(30deg);
+   }
+
+   to {
+    transform: rotate(0deg);
+    transform: scale(1.2);
+   }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+img[alt="github"]:hover {
+    transform: scale(1.2);
+}
+
+img[alt="linkedin"]:hover {
+    transform: scale(1.2);
+}
+
+img[alt="twitter"]:hover {
+    transform: scale(1.2);
+}
+
